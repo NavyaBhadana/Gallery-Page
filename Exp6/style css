@@ -1,0 +1,30 @@
+ ?*body styling */
+ body {
+    font-family : arial,sans serif;
+    background color ;#acaca0;
+    text-align :center;
+    margin : 20 px;
+ }
+ /* Heading styling */
+ h1 { 
+ }
+
+
+
+ /*product box styling */
+ .product -box {
+    background-color:white ;
+    width: 300px ;
+    margin: 0 auto ; 
+    padding : 15 px ;
+    border : 2px solid grey;
+    border-radius : 8px ;
+ }
+ /*product image styling */
+ .product-box img {
+   width : 100% ;
+   height : auto ;
+   border-radius : 8px;
+ }
+ /*Product Title */
+ .product-box h2{}
