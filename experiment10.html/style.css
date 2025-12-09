@@ -1,0 +1,75 @@
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+/*navbar container*/
+.navbar {
+   display: flex;
+   justify-content:space-between;
+   align-items: center;  
+   background-color: aqua; 
+   color:rgb(215, 161, 161);
+   padding: 0ch;
+   position: inherit;       
+
+}
+.logo {
+    font-weight: 200;
+    font-size: larger;
+    color: aquamarine;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+.nav-links li { 
+    margin: 15px;
+}
+.nav-links a { 
+    text-decoration: none;
+    color:blueviolet;
+    font-size: 1rem;
+}
+.actions{
+    .actions a {
+        margin-left: 15px;
+        color:oklab(from color l a b);
+        text-decoration: aliceblue;
+        font-weight: bold;
+    }
+.hamburger menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+/*hide checkbox */
+#menu-toggle {
+    display: none;
+}
+/*mobile-first design*/
+@media (max-width: 768px){
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background-color:oklab(from color l a b);
+        padding: 15px 0;
+    }
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .hamburger {
+        display: block;
+    }
+    /* show menu when checkbox is checked*/
+    #menu-toggle: checked+ .hamburger + .nav-links {
+        display: flex;
+    }
+    }
