@@ -1,0 +1,60 @@
+.container {
+  width: 400px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  font-family: Arial;
+}
+
+/* First input styled differently */
+input:first-of-type {
+  border-radius: 20px;
+  padding: 8px;
+}
+
+/* Focus effect */
+input:focus,
+textarea:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+/* Valid and Invalid states */
+input:invalid,
+select:invalid,
+textarea:invalid {
+  border: 2px solid red;
+}
+
+input:valid,
+select:valid,
+textarea:valid {
+  border: 2px solid green;
+}
+
+/* Radio group styling */
+.radio-group {
+  border: 2px solid #444;
+  padding: 10px;
+}
+
+/* Checked radio button styling */
+.radio-group input[type="radio"]:checked {
+  accent-color: green;
+  box-shadow: 0 0 5px green;
+  outline: 2px solid green;
+}
+
+/* Change label color when radio checked */
+.radio-group input[type="radio"]:checked + span,
+.radio-group input[type="radio"]:checked ~ label {
+  color: green;
+}
+
+/* Button hover */
+button:hover {
+  background: black;
+  color: white;
+  cursor: pointer;
+}
